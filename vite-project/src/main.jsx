@@ -6,6 +6,7 @@ import './assets/css/tailwind.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
+
     <RouterProvider router={routes} />
 
   </div>

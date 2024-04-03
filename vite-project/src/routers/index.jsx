@@ -7,19 +7,21 @@ import Mainlayout from '../layouts/main'
 const routes = createBrowserRouter([
     {
         path: "/",
-        element: <Mainlayout></Mainlayout>,
-    },
-    // {
-    //     path: '/',
-    //     element: <Home />
-    // },
-    {
-        path: '/notifications',
-        element: <Notifications />
-    },
-    {
-        path: '/explore',
-        element: <Explore />
+        element: <Mainlayout />,
+        children: [
+            {
+                index: true,
+                element: <Home />
+            },
+            {
+                path: 'notifications',
+                element: <Notifications />
+            },
+            {
+                path: 'explore',
+                element: <Explore />
+            }
+        ]
     }
 ])
 
