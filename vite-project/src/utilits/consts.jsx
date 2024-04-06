@@ -36,6 +36,7 @@ export const maninMenu = [
     {
         path: "/notifications",
         title: 'Notifications',
+        notifications: 4,
         icon: {
             active: (
                 <svg width={26.25} height={26.25} viewBox="0 0 24 24" aria-hidden="true" className="block">
@@ -52,4 +53,93 @@ export const maninMenu = [
             )
         }
     },
+    {
+        path: '/messages',
+        title: "Messages",
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25} >
+                    <path fill="#fff" d="M1.998 4.499c0-.828.671-1.499 1.5-1.499h17c.828 0 1.5.671 1.5 1.499v2.858l-10 4.545-10-4.547V4.499zm0 5.053V19.5c0 .828.671 1.5 1.5 1.5h17c.828 0 1.5-.672 1.5-1.5V9.554l-10 4.545-10-4.547z">
+                    </path>
+                </svg>
+            ),
+            passive: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25}>
+                    <path fill="#fff" d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z">
+                    </path>
+                </svg>
+            )
+        }
+    },
+    {
+        path: "/lists",
+        title: "Lists",
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25}>
+                    <path fill="#fff" d="M18.5 2h-13C4.12 2 3 3.12 3 4.5v15C3 20.88 4.12 22 5.5 22h13c1.38 0 2.5-1.12 2.5-2.5v-15C21 3.12 19.88 2 18.5 2zM16 14H8v-2h8v2zm0-4H8V8h8v2z">
+                    </path>
+                </svg>
+            ),
+            passive: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25} >
+                    <path fill="#fff" d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm-8 2h8v2H8v-2z">
+                    </path>
+                </svg>)
+        }
+    },
+    {
+        path: '/premium',
+        title: "Premium",
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25}>
+                    <path fill="#fff" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </svg>
+            ),
+            passive: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25}>
+                    <path fill="#fff" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                    </path>
+                </svg>
+            )
+        }
+    },
+    {
+        path: '/profile',
+        title: "Profile",
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25} >
+                    <path fill="#fff" d="M17.863 13.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44zM12 2C9.791 2 8 3.79 8 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4z">
+                    </path>
+                </svg>
+            ),
+            passive: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25} >
+                    <path fill="#fff" d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z">
+                    </path>
+                </svg>
+            )
+        }
+    },
+    {
+        path: '/more',
+        title: "More",
+        icon: {
+            active: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25} >
+                    <path fill="#fff" d="M17.863 13.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44zM12 2C9.791 2 8 3.79 8 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4z">
+                    </path>
+                </svg>
+            ),
+            passive: (
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="block" width={26.25} height={26.25} >
+                    <path fill="#fff" d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z">
+                    </path>
+                </svg>
+            )
+        }
+    }
 ]
