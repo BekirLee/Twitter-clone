@@ -3,6 +3,7 @@ import Explore from '~/pages/explore'
 import Home from '~/pages/home'
 import Notifications from '~/pages/notifications'
 import Mainlayout from '../layouts/main'
+import ErrorPage from '~/pages/errorPage/error'
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
             {
                 path: 'explore',
                 element: <Explore />
+            },
+            {
+                path: "*",
+                element: <ErrorPage />
             }
         ]
     }
