@@ -4,6 +4,7 @@ import routes from './routers'
 import { Provider } from 'react-redux'
 import './assets/css/tailwind.css'
 import store from './store'
+import { RouterProvider } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>

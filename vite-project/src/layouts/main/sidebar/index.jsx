@@ -9,6 +9,9 @@ export default function Sidebar() {
                     <Logo />
                     <Menu />
                 </div>
+                <div className="mt-auto">
+                    return
+                </div>
             </aside>
         </>
     )

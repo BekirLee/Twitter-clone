@@ -1,8 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const intialStates = {
+const initialState = {
     //
-    currentAccount: "false",
+    currentAccount: {
+        userName: "Nihad"
+    },
     accounts: [
         // 
     ]
@@ -10,7 +12,7 @@ const intialStates = {
 
 const auth = createSlice({
     name: "auth",
-    intialStates,
+    initialState,
     reducers: {
         // 
         _addAccount: (state, action) => {
@@ -28,5 +30,7 @@ const auth = createSlice({
     }
 })
 
-export const { _addAccount, _removeAccount, _setCurrentAccount } = auth.actions;
+export const { _addAccount, _removeAccount, _setCurrentAccount } = auth.actions
 export default auth.reducer;
+
+console.log(auth)

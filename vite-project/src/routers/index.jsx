@@ -38,7 +38,7 @@ const routes = createBrowserRouter([
                 element: <ErrorPage />
             },
             {
-                path: "profile",
+                path: ":slug",
                 element: <Profile />
             }
         ]
