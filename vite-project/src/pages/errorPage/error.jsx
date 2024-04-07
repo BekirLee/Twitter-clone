@@ -1,7 +1,7 @@
 function ErrorPage() {
     return (
-        <div className="bg-[#D3D3D3] h-[80px]">
-            <h1 className="text">Wrong Page</h1>
+        <div className="bg-red-300 h-[80px]">
+            <h1 className="text-white">Wrong Page</h1>
         </div>
     )
 }

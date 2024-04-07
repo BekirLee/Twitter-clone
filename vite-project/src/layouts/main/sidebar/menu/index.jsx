@@ -38,7 +38,7 @@ export default function Menu() {
 
             <More />
             <New />
-            <Button size="normal"> Subscribe</Button>
+            <Button size="normal">Send</Button>
         </>
 
     )
