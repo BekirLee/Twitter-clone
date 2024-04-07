@@ -1,13 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import routes from './routers'
-import { RouterProvider } from 'react-router-dom'
+import { Provider } from 'react-redux'
 import './assets/css/tailwind.css'
+import store from './store'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
 
-    <RouterProvider router={routes} />
+    <Provider store={store}>
 
+      <RouterProvider router={routes} />
+
+    </Provider>
   </div>
 )

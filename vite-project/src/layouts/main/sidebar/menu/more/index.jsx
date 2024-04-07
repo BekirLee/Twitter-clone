@@ -1,8 +1,9 @@
 import { Disclosure, Popover } from "@headlessui/react"
+import classNames from "classnames"
 
 export default function More() {
     return (
-        <Popover className="box-shadow-[ rgba(0, 0, 0, 0.15) 0px 2px 8px] ">
+        <Popover className="box-shadow-[ rgba(0, 0, 0, 0.15) 0px 2px 8px] relative">
 
             <Popover.Button className='py-1'>
 
@@ -17,7 +18,7 @@ export default function More() {
                 </div>
             </Popover.Button>
 
-            <Popover.Panel className="shadow-box rounded-xl transition-colors overflow-hidden">
+            <Popover.Panel className="shadow-box w-[318px] rounded-xl transition-colors bg-black overflow-hidden absolute bottom-0 left-0">
                 <button className='py-1 w-[100%] hover:bg-[#eff3f41a]'>
 
                     <div className="flex justify-start items-center rounded-full py-3 relative">
@@ -43,39 +44,51 @@ export default function More() {
                 </button>
 
                 <Disclosure>
-                    <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
-                        Is team pricing available?
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
-                            <path fill="#fff" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                        </svg>
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="text-gray-500 px-4">
-                        Wait a little bit
-                    </Disclosure.Panel>
+                    {({ open }) => (
+                        <>
+                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
+                                Is team pricing available?
+                                <svg className={classNames({ "rotate-180 text-[#1d9bf0]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
+                                    <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                </svg>
+                            </Disclosure.Button >
+                            <Disclosure.Panel className="text-gray-500 px-4">
+                                Wait a little bit
+                            </Disclosure.Panel >
+                        </>
+                    )}
                 </Disclosure>
 
                 <Disclosure>
-                    <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
-                        Is team pricing available?
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
-                            <path fill="#fff" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                        </svg>
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="text-gray-500 px-4">
-                        Hmm Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quo voluptas id velit praesentium nesciunt nam magnam similique rerum minus?
-                    </Disclosure.Panel>
+                    {({ open }) => (
+                        <>
+                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
+                                Find All frineds and tweet
+                                <svg className={classNames({ "rotate-180  text-[#1d9bf0]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
+                                    <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                </svg>
+                            </Disclosure.Button >
+                            <Disclosure.Panel className="text-gray-500 px-4">
+                                Hmm Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quo voluptas id velit praesentium nesciunt nam magnam similique rerum minus?
+                            </Disclosure.Panel>
+                        </>
+                    )}
                 </Disclosure>
 
                 <Disclosure>
-                    <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
-                        Is team pricing available?
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
-                            <path fill="#fff" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                        </svg>
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="text-gray-500 px-4 pb-3">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo blanditiis magnam, voluptates nesciunt sunt commodi?
-                    </Disclosure.Panel>
+                    {({ open }) => (
+                        <>
+                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
+                                Connect with friends
+                                <svg className={classNames({ "rotate-180  text-[#1d9bf0]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
+                                    <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                </svg>
+                            </Disclosure.Button>
+                            <Disclosure.Panel className="text-gray-500 px-4 pb-3">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo blanditiis magnam, voluptates nesciunt sunt commodi?
+                            </Disclosure.Panel>
+                        </>
+                    )}
                 </Disclosure>
 
             </Popover.Panel>
