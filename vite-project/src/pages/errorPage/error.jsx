@@ -1,8 +1,8 @@
 function ErrorPage() {
     return (
-        <>
-            <h1>Wrong Page</h1>
-        </>
+        <div className="bg-[#D3D3D3] h-[80px]">
+            <h1 className="text">Wrong Page</h1>
+        </div>
     )
 }
 

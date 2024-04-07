@@ -19,7 +19,7 @@ export default function Menu() {
 
 
                                 {menu?.notifications && (
-                                    <span className="absolute top-[6px] left-[12px] bg-sky-500 rounded-full w-[18px] h-[18px] flex justify-center items-center">4</span>
+                                    <span className="absolute top-[6px] left-[20px] bg-sky-500 rounded-full w-[18px] h-[18px] flex justify-center items-center">4</span>
                                 )}
                                 {!isActive && menu.icon.passive}
 
