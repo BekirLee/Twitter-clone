@@ -1,3 +1,4 @@
+import Account from "./account";
 import Logo from "./logo";
 import Menu from "./menu";
 
@@ -9,9 +10,8 @@ export default function Sidebar() {
                     <Logo />
                     <Menu />
                 </div>
-                <div className="mt-auto">
-                    return
-                </div>
+
+                <Account />
             </aside>
         </>
     )
