@@ -3,7 +3,9 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     //
     currentAccount: {
-        userName: "Nihad"
+        userName: "Nihad",
+        avatar: "src/assets/image 46.png",
+        email: "nihadbekirli8@gmail.com"
     },
     accounts: [
         // 

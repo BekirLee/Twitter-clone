@@ -3,7 +3,7 @@ import classNames from "classnames"
 
 export default function More() {
     return (
-        <Popover className="box-shadow-[ rgba(0, 0, 0, 0.15) 0px 2px 8px] relative">
+        <Popover className="box-shadow-[ rgba(0, 0, 0, 0.15) 0px 2px 8px] relative p-3">
 
             <Popover.Button className='py-1'>
 

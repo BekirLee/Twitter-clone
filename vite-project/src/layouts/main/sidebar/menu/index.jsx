@@ -38,7 +38,7 @@ export default function Menu() {
 
             <More />
             {/* <New /> */}
-            <Button size="normal">Send</Button>
+            <Button size="large">Send</Button>
         </>
 
     )
