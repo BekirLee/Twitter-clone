@@ -1,4 +1,4 @@
-import { Popover } from "@headlessui/react";
+import { Popover, Transition } from "@headlessui/react";
 import { useAccount } from '~/store/auth/hooks'
 import More from "./more";
 
@@ -22,11 +22,20 @@ export default function Account() {
                     </div>
                 </Popover.Button>
 
-                <Popover.Panel className='absolute bottom-[100%] text-center bg-black w-[300px] shadow-box -translate-1/2'>
+                <Transition
+                    enter="transition duration-200 ease-in-out"
+                    enterFrom="transform  opacity-0"
+                    enterTo="transform  opacity-100"
+                    leave="transition duration-200 ease-in-out "
+                    leaveFrom="transform  opacity-100"
+                    leaveTo="transform  opacity-0"
+                >
+                    <Popover.Panel className='absolute bottom-[100%] text-center rounded-lg bg-black w-[300px] shadow-box -translate-1/2'>
 
-                    <More />
+                        <More />
 
-                </Popover.Panel>
+                    </Popover.Panel>
+                </Transition>
             </Popover>
 
         </div >
