@@ -34,10 +34,10 @@ export default function Account() {
 
                         <More />
 
+                        <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[24px] h-[16.25px] rotate-180 relative bottom-[-10px] left-[150px]">
+                            <path d="M22 17H2L12 6l10 11z"></path>
+                        </svg>
                     </Popover.Panel>
-                    <svg viewBox="0 0 24 24" aria-hidden="true" className="">
-                        <path d="M22 17H2L12 6l10 11z"></path>
-                    </svg>
                 </Transition>
             </Popover>
 
