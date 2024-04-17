@@ -32,7 +32,7 @@ export default function Account() {
                 >
                     <Popover.Panel className='absolute bottom-[100%] text-center rounded-lg bg-black w-[300px] shadow-box -translate-1/2'>
 
-                        <More />
+                        <More close={close} />
 
                         <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[24px] h-[16.25px] rotate-180 relative bottom-[-10px] left-[150px]">
                             <path d="M22 17H2L12 6l10 11z"></path>

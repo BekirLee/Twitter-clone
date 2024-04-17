@@ -13,6 +13,7 @@ export default function More() {
                 accounts.map(account => (
                     <button
                         type="button"
+                        disabled={currentAccount.id === account.id}
                         onClick={() => {
                             setCurrentAccount(account)
                         }}
