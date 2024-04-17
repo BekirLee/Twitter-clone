@@ -4,16 +4,17 @@ import Button from "~/components/buttons";
 import { maninMenu } from "~/utilits/consts";
 import More from "./more";
 import New from "./new";
+import { useAccount } from "~/store/auth/hooks";
 
 export default function Menu() {
+    const account = useAccount();
     return (
-        <>
+        <nav key={account} className="mt-0.5 mb-1">
 
-            {/* from mainMenu */}
 
             {
                 maninMenu.map((menu, index) => (
-                    <NavLink to={menu.path} className='py-1 group' key={index}>
+                    <NavLink to={typeof menu.path() == 'function' ? menu.path() : menu.path()} className='py-1 group' key={index}>
                         {({ isActive }) => (
                             <div className={classNames("inline-flex items-center justify-start gap-5 px-2 group-hover:bg-[#eff3f41a] rounded-full py-3 relative ", { "font-bold": isActive })}>
 
@@ -39,7 +40,7 @@ export default function Menu() {
             <More />
             {/* <New /> */}
             <Button size="large">Send</Button>
-        </>
+        </nav>
 
     )
 }

@@ -110,7 +110,7 @@ export const maninMenu = [
         }
     },
     {
-        path: `/${store.getState().auth.currentAccount.userName}`,
+        path: `/${store.getState()?.auth?.currentAccount?.userName}`,
         title: "Profile",
         icon: {
             active: (
