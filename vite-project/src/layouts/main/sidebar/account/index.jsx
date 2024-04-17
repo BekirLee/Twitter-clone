@@ -10,7 +10,7 @@ export default function Account() {
     return (
         <div className="mt-auto">
             <Popover className='relative'>
-                <Popover.Button className="my-3 p-3 rounded-full hover:bg-[#eff3f41a] w-full flex items-center justify-start">
+                <Popover.Button className="my-3 p-3 rounded-full hover:bg-[#eff3f41a] w-full flex items-center justify-start transition-colors">
                     <img className="w-[40px] h-[40px] object-contain" src={account.avatar} alt="" />
                     <div className="userInfo flex flex-wrap items-center pl-3">
                         <div className="userName">
@@ -40,7 +40,6 @@ export default function Account() {
                     </Popover.Panel>
                 </Transition>
             </Popover>
-
         </div >
     )
 }
