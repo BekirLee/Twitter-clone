@@ -1,12 +1,23 @@
-import { useState } from "react"
+import { useReducer, useRef, useState } from "react"
+import { useClickAway } from "react-use";
 
 export default function Search() {
 
     const [query, setQuery] = useState('');
     const [focus, setFocus] = useState(false);
 
+    const ref = useRef();
+    useClickAway(ref, () => {
+        setFocus(false)
+        // console.log('hell')
+    })
+
     return (
-        <div className="min-h-[32px] h-[54px] mb-3 flex items-center">
+
+        <div
+            ref={ref}
+            className="min-h-[32px] h-[54px] mb-3 flex items-center">
+
             <label className="h-[43px] rounded-full bg-[#202327] w-full block border border-transparent relative group flex items-center focus-within:bg-black focus-within:border-[#1d9bf0]">
                 <div className="w-[64px] h-full flex items-center justify-center">
                     <svg viewBox="0 0 24 24" aria-hidden="true" className="min-w-[32px] h-[18.75px] pl-[4px]" >
@@ -20,7 +31,7 @@ export default function Search() {
                     className="w-full h-full bg-transparent rounded-full outline-none pl-[1px] text-[15px]"
                     value={query}
                     onChange={e => setQuery(e.target.value)}
-                    onBlur={() => setFocus(false)}
+                    // onBlur={() => setFocus(false)}
                     onFocus={() => setFocus(true)}
                 />
 
@@ -37,7 +48,7 @@ export default function Search() {
                 )}
 
                 {focus && (
-                    <div className="absolute top-full w-full bg-black shadow-boxpx-4 px-4 max-h-[calc(-53px + 80vh)] min-[100px] rounded-lg shadow-box">
+                    <div className="absolute top-full w-full bg-black shadow-box px-4 px-4 max-h-[calc(-53px + 80vh)] min-[100px] rounded-lg">
                         <p className="p-3 pt-5">
                             Try searching for people, lists, or keywords
                         </p>
