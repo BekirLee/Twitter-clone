@@ -133,6 +133,17 @@ export const maninMenu = [
 
 export const topics = [
     {
-        
+        title: 'trending in Azerbaijan',
+        topic: {
+            type: 'tag',
+            value: 'Azerbijani'
+        }
+    },
+    {
+        title: 'Trending in Azerbaijan',
+        topic: {
+            type: 'query',
+            value: "President Ilham Aliyev"
+        }
     }
 ]
