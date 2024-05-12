@@ -1,4 +1,4 @@
-import Button from "../buttons";
+// import Button from "./Button";
 
 export default function Premium() {
     return (
@@ -10,9 +10,9 @@ export default function Premium() {
                 Subscribe to unlock new features and if eligible, receive a share of ads revenue.
             </p>
             <div className="self-start">
-                <Button size="normal">
+                {/* <Button size="normal">
                     Subscribe
-                </Button>
+                </Button> */}
             </div>
         </section>
     )   

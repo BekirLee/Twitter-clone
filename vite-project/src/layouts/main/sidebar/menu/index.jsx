@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { Link, NavLink } from "react-router-dom";
-import Button from "~/components/buttons";
+// import Button from "~/components/buttons";
 import { maninMenu } from "~/utilits/consts";
 import More from "./more";
 import New from "./new";
@@ -38,7 +38,7 @@ export default function Menu() {
             
             <More />
             {/* <New /> */}
-            <Button size="large">Send</Button>
+            {/* <Button size="large">Send</Button> */}
         </div>
 
     )
