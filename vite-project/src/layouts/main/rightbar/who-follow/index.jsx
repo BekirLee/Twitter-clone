@@ -1,3 +1,4 @@
+import Button from "~/components/Button/index,";
 import SidebarSection from "~/components/sidebar-section";
 import { WhoFollowsUsers } from "~/mock";
 import { useAccount } from "~/store/auth/hooks";
@@ -14,9 +15,8 @@ export default function WhoFollows() {
                 {
                     WhoFollowsUsers.map((user, index) => {
                         <>
-                            {/* <button> */}
                             {user}
-                            {/* </button> */}
+                            <Button size="normal" variant="white" />
                         </>
                     })
                 }

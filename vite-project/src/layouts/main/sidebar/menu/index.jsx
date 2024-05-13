@@ -5,6 +5,7 @@ import { maninMenu } from "~/utilits/consts";
 import More from "./more";
 import New from "./new";
 import { useAccount } from "~/store/auth/hooks";
+import Button from "~/components/Button/index,";
 
 
 export default function Menu() {
@@ -35,10 +36,9 @@ export default function Menu() {
 
                 ))
             }
-            
+
             <More />
-            {/* <New /> */}
-            {/* <Button size="large">Send</Button> */}
+            <Button size="large">Send</Button>
         </div>
 
     )

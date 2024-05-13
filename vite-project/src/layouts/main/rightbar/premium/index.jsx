@@ -1,5 +1,7 @@
 // import Button from "./Button";
 
+import Button from "~/components/Button/index,";
+
 export default function Premium() {
     return (
         <section className="bg-transparent mb-4 rounded-xl border border-[#2f3336] py-3 px-4 flex flex-col gap-2.5">
@@ -10,10 +12,10 @@ export default function Premium() {
                 Subscribe to unlock new features and if eligible, receive a share of ads revenue.
             </p>
             <div className="self-start">
-                {/* <Button size="normal">
+                <Button variant="primary" size="normal">
                     Subscribe
-                </Button> */}
+                </Button>
             </div>
         </section>
-    )   
+    )
 }

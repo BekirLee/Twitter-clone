@@ -9,7 +9,6 @@ export default function Search() {
     const ref = useRef();
     useClickAway(ref, () => {
         setFocus(false)
-        // console.log('hell')
     })
 
     return (
