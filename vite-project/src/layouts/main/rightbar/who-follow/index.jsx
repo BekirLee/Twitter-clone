@@ -7,21 +7,20 @@ export default function WhoFollows() {
     const account = useAccount();
 
     return (
-        <>
-            <SidebarSection
-                title="Who to follow"
-                more={`/connect_people?user_id=${account.id}`}>
+        <SidebarSection
+            title="Who to follow"
+            more={`/connect_people?user_id=${account.id}`}>
+            {
+                WhoFollowsUsers.map((user, index) => {
+                    // <>
+                    // { user.userName }
+                    {/* <Button size="normal" variant="white" >
+                                Hello
+                            </Button> */}
+                    // </>
+                })
+            }
 
-                {
-                    WhoFollowsUsers.map((user, index) => {
-                        <>
-                            {user}
-                            <Button size="normal" variant="white" />
-                        </>
-                    })
-                }
-
-            </SidebarSection>
-        </>
+        </SidebarSection>
     )
 }

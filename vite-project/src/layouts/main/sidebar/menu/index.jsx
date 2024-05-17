@@ -38,7 +38,7 @@ export default function Menu() {
             }
 
             <More />
-            <Button size="large">Send</Button>
+            <Button variant="primary" size="large">Send</Button>
         </div>
 
     )

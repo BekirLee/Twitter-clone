@@ -9,5 +9,10 @@ export const WhoFollowsUsers =
             id: 4,
             userName: 'AmiAmiEnglish',
             avatar: 'https://twitter.com/AmiAmi_English'
+        },
+        {
+            id: 5,
+            userName: 'AmiAmiEnglish',
+            avatar: 'https://twitter.com/AmiAmi_English'
         }
     ]
