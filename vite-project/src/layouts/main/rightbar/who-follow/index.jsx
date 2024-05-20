@@ -12,12 +12,11 @@ export default function WhoFollows() {
             more={`/connect_people?user_id=${account.id}`}>
             {
                 WhoFollowsUsers.map((user, index) => {
-                    // <>
-                    // { user.userName }
-                    {/* <Button size="normal" variant="white" >
-                                Hello
-                            </Button> */}
-                    // </>
+                    // <button>
+                    <>
+                        <img src={user.avatar} className="w-10 h-10 rounded-full object-cover" alt="" />
+                    </>
+                    {/* </button> */ }
                 })
             }
 

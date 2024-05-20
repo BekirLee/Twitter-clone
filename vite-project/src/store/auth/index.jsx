@@ -10,13 +10,13 @@ const initialState = {
     },
     accounts: [
         {
-            id: "12nf19hv",
+            id: 1,
             userName: "Nihad",
             avatar: "src/assets/image 46.png",
             email: "nihadbekirli8@gmail.com"
         },
         {
-            id: "12n13d",
+            id: 2,
             userName: "Bekir",
             avatar: "src/assets/image 46.png",
             email: "bekirli8@gmail.com"

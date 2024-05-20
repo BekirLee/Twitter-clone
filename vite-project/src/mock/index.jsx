@@ -2,17 +2,20 @@ export const WhoFollowsUsers =
     [
         {
             id: 3,
-            userName: '@pskolojirehberi',
-            avatar: 'https://twitter.com/pskolojirehberi/photo'
+            userName: "Nihad",
+            avatar: "src/assets/image 46.png",
+            email: "nihadbekirli8@gmail.com"
         },
         {
             id: 4,
-            userName: 'AmiAmiEnglish',
-            avatar: 'https://twitter.com/AmiAmi_English'
+            userName: "Nihad",
+            avatar: "src/assets/image 46.png",
+            email: "nihadbekirli8@gmail.com",
         },
         {
             id: 5,
-            userName: 'AmiAmiEnglish',
-            avatar: 'https://twitter.com/AmiAmi_English'
+            userName: "Nihad",
+            avatar: "src/assets/image 46.png",
+            email: "nihadbekirli8@gmail.com"
         }
     ]

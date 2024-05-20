@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 // import Button from "~/components/buttons";
 import { maninMenu } from "~/utilits/consts";
 import More from "./more";
-import New from "./new";
+// import New from "./new";
 import { useAccount } from "~/store/auth/hooks";
 import Button from "~/components/Button/index,";
 
