@@ -3,22 +3,22 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     //
     currentAccount: {
-        id: "12nf19hv",
+        id: 1,
         userName: "Nihad",
-        avatar: "src/assets/image 46.png",
+        avatar: "src/assets/imgs/image 46.png",
         email: "nihadbekirli8@gmail.com"
     },
     accounts: [
         {
             id: 1,
             userName: "Nihad",
-            avatar: "src/assets/image 46.png",
+            avatar: "src/assets/imgs/image 46.png",
             email: "nihadbekirli8@gmail.com"
         },
         {
             id: 2,
             userName: "Bekir",
-            avatar: "src/assets/image 46.png",
+            avatar: "src/assets/imgs/image 46.png",
             email: "bekirli8@gmail.com"
         },
     ]
