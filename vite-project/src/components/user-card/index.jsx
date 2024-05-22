@@ -17,7 +17,7 @@ export default function UserCard({ user }) {
                         )
                     }
                 </div>
-                <div className="text-left"> 
+                <div className="text-left">
                     @{user.userName}
                 </div>
             </div>
@@ -25,12 +25,22 @@ export default function UserCard({ user }) {
             {
                 following ? (
 
-                    <Button size='small' variant="white" >
-                        Follow
+                    <Button
+                        size='small'
+                        variant="white-outline"
+                        className='group'
+                        onClick={() => setFollowing(false)}
+                    >
+                        <div className="flex group-hover:hidden">
+                            Following
+                        </div>
+                        <div className="hidden group-hover:flex border-white">
+                            Unfollow
+                        </div>
                     </Button>
                 ) : (
                     <Button size='small' variant="white" onClick={() => setFollowing(true)} >
-                        Following
+                        Follow
                     </Button>
                 )
             }
