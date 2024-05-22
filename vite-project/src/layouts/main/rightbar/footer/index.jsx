@@ -10,16 +10,30 @@ export default function Footer() {
             <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Accessibility</Link>
             <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Ads info</Link>
 
-            <Popover className='leading-4'>
+            <Popover className='relative leading-4'>
                 <Popover.Button className=''>
                     <span className='leading-4 text-[13px] text-[#71767b]'>
                         More...
                     </span>
                 </Popover.Button>
-                <Popover.Panel className='bg-transparent'>
-
+                <Popover.Panel className='w-[150px] bg-black absolute bottom-[17px] shadow-box rounded-[12px] right-0 flex flex-col'>
+                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94] transiton-colors">
+                        About
+                    </Link>
+                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94]">
+                        Dowlond the X App
+                    </Link>
+                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94]">
+                        X for business
+                    </Link>
+                    <Link to="/" className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94]">
+                        Developers
+                    </Link>
                 </Popover.Panel>
             </Popover>
+            <p className="text-[#71767b] leading-4 text-[13px]">
+                &copy; 2024 X Corp.
+            </p>
         </footer>
     )
 }

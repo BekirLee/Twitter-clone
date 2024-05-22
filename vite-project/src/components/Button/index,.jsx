@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { createElement } from "react";
 import PropTypes from 'prop-types'
 
-export default function Button({ size, variant, children }) {
+export default function Button({ size, variant, children, ...props }) {
     return createElement('button', {
         className: classNames("bg-[#1d9bf0] rounded-full flex items-center  justify-center font-bold ",
             {
@@ -12,13 +12,15 @@ export default function Button({ size, variant, children }) {
                 "bg-[#1d9bf0] hover:bg-[#1a8cd8]": variant === 'primary',
                 "bg-white text-black": variant === 'white',
             }
-        )
+        ),
+        ...props
     }, children)
 }
 
 Button.propTypes = {
     size: PropTypes.oneOf(['small', 'large', 'normal']),
-    variant: PropTypes.oneOf(['primary', 'white'])
+    variant: PropTypes.oneOf(['primary', 'white']),
+    props: PropTypes.object
 }
 
 Button.defaultProps = {
