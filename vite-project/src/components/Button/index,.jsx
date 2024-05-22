@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export default function Button({ size, variant, children }) {
     return createElement('button', {
-        className: classNames("bg-[#1d9bf0] rounded-full flex items-center text-white justify-center font-bold ",
+        className: classNames("bg-[#1d9bf0] rounded-full flex items-center  justify-center font-bold ",
             {
                 "px-4 h-8": size === 'small',
                 "px-4 h-9": size === 'normal',
