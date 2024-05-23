@@ -44,8 +44,6 @@ export default function UserCard({ user }) {
                     </Button>
                 )
             }
-
-
         </button>
     )
 }

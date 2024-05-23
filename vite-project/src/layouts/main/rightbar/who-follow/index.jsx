@@ -1,4 +1,3 @@
-// import Button from "~/components/Button/index,";
 import Button from "~/components/Button/index,";
 import SidebarSection from "~/components/sidebar-section";
 import UserCard from "~/components/user-card";
