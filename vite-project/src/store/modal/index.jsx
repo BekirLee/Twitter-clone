@@ -22,4 +22,4 @@ const modal = createSlice({
 export const { _setModal, _removeModal } = modal.actions
 export default modal.reducer;
 
-console.log(modal)
+// console.log(modal)

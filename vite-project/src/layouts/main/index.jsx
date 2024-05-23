@@ -2,8 +2,13 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./sidebar";
 import RightBar from './rightbar';
+import { useModal } from "~/store/modal/hooks";
+import Modal from "~/modals";
 
 function Mainlayout() {
+    const modal = useModal();
+    console.log('modal', modal);
+
     return (
         <div className='w-[1265px] mx-auto flex'>
             <Sidebar />
@@ -13,6 +18,10 @@ function Mainlayout() {
             </main>
 
             <RightBar />
+
+            {
+                modal && (< Modal />)
+            }
         </div>
     );
 }

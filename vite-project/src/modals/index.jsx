@@ -1,7 +1,7 @@
-export default function ApperanceModal() {
+export default function Modal() {
     return (
         <>
-            <h1>change</h1>
+            modal var
         </>
     )
 }

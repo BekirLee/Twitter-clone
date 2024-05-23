@@ -1,5 +1,6 @@
 import { Disclosure, Popover } from "@headlessui/react"
 import classNames from "classnames"
+import { setModal } from "~/store/modal/actions"
 
 export default function More() {
     return (
@@ -79,13 +80,15 @@ export default function More() {
                     {({ open }) => (
                         <>
                             <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
-                                Connect with friends
+                                Display
                                 <svg className={classNames({ "rotate-180  text-[#1d9bf0]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
                                     <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                                 </svg>
                             </Disclosure.Button>
-                            <Disclosure.Panel className="text-gray-500 px-4 pb-3">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo blanditiis magnam, voluptates nesciunt sunt commodi?
+                            <Disclosure.Panel className="text-gray-500 px-4 pb-3" onClick={() => setModal('apperance')}>
+                                <button className="text-[15px] px-3 font-medium h-11">
+                                    View
+                                </button>
                             </Disclosure.Panel>
                         </>
                     )}

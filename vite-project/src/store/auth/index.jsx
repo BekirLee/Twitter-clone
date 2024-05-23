@@ -47,4 +47,4 @@ const auth = createSlice({
 export const { _addAccount, _removeAccount, _setCurrentAccount } = auth.actions
 export default auth.reducer;
 
-console.log(auth)
+// console.log(auth)
