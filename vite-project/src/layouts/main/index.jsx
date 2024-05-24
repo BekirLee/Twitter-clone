@@ -7,7 +7,7 @@ import Modal from "~/modals";
 
 function Mainlayout() {
     const modal = useModal();
-    console.log('modal', modal);
+    // console.log('modal', modal);
 
     return (
         <div className='w-[1265px] mx-auto flex'>

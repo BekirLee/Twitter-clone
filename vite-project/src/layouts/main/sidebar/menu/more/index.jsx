@@ -85,7 +85,7 @@ export default function More() {
                                     <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
                                 </svg>
                             </Disclosure.Button>
-                            <Disclosure.Panel className="text-gray-500 px-4 pb-3" onClick={() => setModal('apperance')}>
+                            <Disclosure.Panel className="text-gray-500 px-4 pb-3" onClick={() => setModal('appearance')}>
                                 <button className="text-[15px] px-3 font-medium h-11">
                                     View
                                 </button>
