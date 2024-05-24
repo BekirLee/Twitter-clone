@@ -86,7 +86,7 @@ export default function More() {
                                 </svg>
                             </Disclosure.Button>
                             <Disclosure.Panel className="text-gray-500 px-4 pb-3" onClick={() => setModal('appearance')}>
-                                <button className="text-[15px] px-3 font-medium h-11">
+                                <button className="text-[15px] px-3 font-medium h-11 w-full">
                                     View
                                 </button>
                             </Disclosure.Panel>
