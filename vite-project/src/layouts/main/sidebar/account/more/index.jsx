@@ -10,8 +10,8 @@ export default function More() {
     return (
         <div >
             {
-                accounts.map(account => (
-                    <button
+                accounts.map((account,index) => (
+                    <button key={index}
                         type="button"
                         disabled={currentAccount.id === account.id}
                         onClick={() => {
