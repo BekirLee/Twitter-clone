@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
 
-export const useModal = () => useSelector(state => state.modal.modal);
+export const useAppearance = () => useSelector(state => state.appearance);
 
 
