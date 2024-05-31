@@ -5,7 +5,7 @@ export default function SidebarSection({ title, children, more }) {
     return (
         <section className="mb-4 rounded-xl border bg-[color:var(--background-secondary)] border-[color:var(--background-secondary)] flex flex-col gap-2.5 ">
             <div className="">
-                <h1 className="text-[#e7e9ea] text-[19px] font-extrabold px-4 pt-3">{title}</h1>
+                <h1 className="text-[color:var(--color-base)] text-[19px] font-extrabold px-4 pt-3">{title}</h1>
                 <div className="grid ">
                     {children}
                 </div>
