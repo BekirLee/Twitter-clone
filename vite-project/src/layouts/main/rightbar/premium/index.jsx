@@ -4,7 +4,7 @@ import Button from "~/components/Button/index,";
 
 export default function Premium() {
     return (
-        <section className="bg-transparent mb-4 rounded-xl border border-[#2f3336] py-3 px-4 flex flex-col gap-2.5">
+        <section className="bg-[color:var(--background-secondary)] mb-4 rounded-xl border border-[#2f3336] py-3 px-4 flex flex-col gap-2.5">
             <div className="text-[#e7e9ea] font-extrabold text-[19px]">
                 Subscribe to Premium
             </div>

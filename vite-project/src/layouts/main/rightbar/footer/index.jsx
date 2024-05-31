@@ -16,17 +16,17 @@ export default function Footer() {
                         More...
                     </span>
                 </Popover.Button>
-                <Popover.Panel className='w-[150px] bg-black absolute bottom-[17px] shadow-box rounded-[12px] right-0 flex flex-col'>
-                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94] transiton-colors">
+                <Popover.Panel className='w-[150px] bg-[color:var(--background-primary)] absolute bottom-[17px] shadow-box rounded-[12px] right-0 flex flex-col'>
+                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[color:var(--background-secondary)] transiton-colors">
                         About
                     </Link>
-                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94]">
+                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[color:var(--background-secondary)] ">
                         Dowlond the X App
                     </Link>
-                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94]">
+                    <Link to='/' className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[color:var(--background-secondary)] ">
                         X for business
                     </Link>
-                    <Link to="/" className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[#16181c94]">
+                    <Link to="/" className="text-white text-[15px] font-700 px-4 py-3 hover:bg-[color:var(--background-secondary)] ">
                         Developers
                     </Link>
                 </Popover.Panel>

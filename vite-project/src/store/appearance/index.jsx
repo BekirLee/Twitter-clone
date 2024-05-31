@@ -2,16 +2,29 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     //
+    // backgroundColor: {
+    //     primary: '#000',
+    //     secondary: '#16181c',
+    //     third: '#273340'
+    // },
+    // color: {
+    //     primary: "#1d9bf0",
+    //     secondary: "#8ecdf8",
+    //     base:"#e7e9ea"
+    // },
+    // fontSize: 16
+
     backgroundColor: {
-        primary: '#000',
-        secondary: '#16181c',
+        primary: '#15202b',
+        secondary: '#1e2732',
         third: '#273340'
     },
     color: {
         primary: "#1d9bf0",
-        secondary: "#8ecdf8"
+        secondary: "#8ecdf8",
+        base: "#f7f9f9"
     },
-    fontsize: 16
+    fontSize: 16
 }
 
 const appearance = createSlice({
@@ -26,7 +39,7 @@ const appearance = createSlice({
             state.color = action.payload
         },
         _setFontsize: state => {
-            state.fontsize = action.payload
+            state.fontSize = action.payload
         }
     }
 })
