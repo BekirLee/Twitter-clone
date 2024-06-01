@@ -11,6 +11,7 @@ const initialState = {
     //     primary: "#1d9bf0",
     //     secondary: "#8ecdf8",
     //     base:"#e7e9ea"
+    // baseSecondary: '#71767b'
     // },
     // fontSize: 16
 
@@ -22,7 +23,9 @@ const initialState = {
     color: {
         primary: "#1d9bf0",
         secondary: "#8ecdf8",
-        base: "#f7f9f9"
+        base: "#f7f9f9",
+        // baseSecondary: '#71767b'
+        baseSecondary: 'red'
     },
     fontSize: 16
 }

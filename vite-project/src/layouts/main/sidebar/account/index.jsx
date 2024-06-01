@@ -30,7 +30,7 @@ export default function Account() {
                     leaveFrom="transform  opacity-100"
                     leaveTo="transform  opacity-0"
                 >
-                    <Popover.Panel className='absolute bottom-[100%] text-center rounded-lg bg-black w-[300px] shadow-box -translate-1/2'>
+                    <Popover.Panel className='absolute bottom-[100%] text-center rounded-lg bg-[color:var(--background-primary)] w-[300px] shadow-box -translate-1/2'>
 
                         <More close={close} />
 

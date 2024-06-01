@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="mb-4 px-4 flex flex-wrap gap-2 items-center">
-            <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Terms of Service</Link>
-            <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Cookie Policy</Link>
-            <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Privacy Policy</Link>
-            <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Accessibility</Link>
-            <Link to='/' className="text-[#71767b] leading-4 text-[13px] hover:underline"> Ads info</Link>
+            <Link to='/' className="text-[color:var(--base-secondary)] leading-4 text-[13px] hover:underline"> Terms of Service</Link>
+            <Link to='/' className="text-[color:var(--base-secondary)] leading-4 text-[13px] hover:underline"> Cookie Policy</Link>
+            <Link to='/' className="text-[color:var(--base-secondary)] leading-4 text-[13px] hover:underline"> Privacy Policy</Link>
+            <Link to='/' className="text-[color:var(--base-secondary)] leading-4 text-[13px] hover:underline"> Accessibility</Link>
+            <Link to='/' className="text-[color:var(--base-secondary)] leading-4 text-[13px] hover:underline"> Ads info</Link>
 
             <Popover className='relative leading-4'>
                 <Popover.Button className=''>
-                    <span className='leading-4 text-[13px] text-[#71767b]'>
+                    <span className='leading-4 text-[13px] text-[color:var(--base-secondary)]'>
                         More...
                     </span>
                 </Popover.Button>
@@ -31,7 +31,7 @@ export default function Footer() {
                     </Link>
                 </Popover.Panel>
             </Popover>
-            <p className="text-[#71767b] leading-4 text-[13px]">
+            <p className="text-[color:var(--base-secondary)] leading-4 text-[13px]">
                 &copy; 2024 X Corp.
             </p>
         </footer>

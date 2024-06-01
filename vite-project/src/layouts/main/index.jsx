@@ -20,6 +20,7 @@ function Mainlayout() {
         document.documentElement.style.setProperty('--color-primary', appearance.color.primary);
         document.documentElement.style.setProperty('--color-secondary', appearance.color.secondary);
         document.documentElement.style.setProperty('--color-base', appearance.color.base);
+        document.documentElement.style.setProperty('--base-secondary', appearance.color.baseSecondary);
 
         document.documentElement.style.setProperty('--fontSize', appearance.fontSize + "px");
 

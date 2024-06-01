@@ -15,7 +15,7 @@ export default function Topic({ item }) {
                         {item.title}
                     </span>
                 </div>
-                <div className="text-[color:var(--color-base)] font-bold">
+                <div className=" font-bold">
                     <span className="font-sans">
                         {
                             item.topic.type == 'tag' ? '#' + item.topic.value : item.topic.value
@@ -26,7 +26,7 @@ export default function Topic({ item }) {
                     {item.postCount ? item.postCount.toLocaleString() + 'K posts' : item.postCount}
                 </div>
             </div>
-            <Popover className='relative  text-[color:var(--color-base)]'>
+            <Popover className='relative  '>
                 <Popover.Button className="rounded-full p-2 group hover:bg-[#1d9bf01a] w-[34.75px] h-[34.75px] text-center hover:text-[#1d9bf0]">
                     <button>
                         <svg viewBox="0 0 24 24" aria-hidden="true" width={18.75} height={18.75} >
