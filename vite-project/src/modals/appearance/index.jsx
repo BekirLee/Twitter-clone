@@ -7,7 +7,7 @@ export default function ApperanceModal() {
             </h3>
 
             <div className="p-8 pt-0">
-                <p className="text-center text-[#71767b] text-[15px] leading-5 mb-5">
+                <p className="text-center text-[color:var(--base-secondary)] text-[15px] leading-5 mb-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, placeat.
                 </p>
                 <div className="mx-8 mb-4">
@@ -25,12 +25,12 @@ export default function ApperanceModal() {
                                         </path>
                                     </svg>
                                 </div>
-                                <div className="ml-1 flex items-center text-[#71767b]">
+                                <div className="ml-1 flex items-center text-[color:var(--base-secondary)]">
                                     @X
                                 </div>
                             </header>
                             <div className="leading-5 text-[#e7e9ea] text-[15px]">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officiis sapiente accusamus cumque mollitia natus <span className="text-[#1d9bf0] hover:text-[#71767b] cursor-pointer">@X</span> sed incidunt earum rerum enim, at, doloribus iure dignissimos maiores eius magnam debitis cum.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officiis sapiente accusamus cumque mollitia natus <span className="text-[#1d9bf0] hover:text-[color:var(--base-secondary)] cursor-pointer">@X</span> sed incidunt earum rerum enim, at, doloribus iure dignissimos maiores eius magnam debitis cum.
                             </div>
                         </div>
                     </div>

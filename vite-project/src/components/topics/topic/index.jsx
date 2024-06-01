@@ -10,7 +10,7 @@ export default function Topic({ item }) {
         >
             <div className="">
 
-                <div className="text-[#71767C] text-[13px] leading-4 ">
+                <div className="text-[color:var(--base-secondary)] text-[13px] leading-4 ">
                     <span>
                         {item.title}
                     </span>
@@ -22,7 +22,7 @@ export default function Topic({ item }) {
                         }
                     </span>
                 </div>
-                <div className="text-[#71767C] text-[13px] leading-4 font-sans">
+                <div className="text-[color:var(--base-secondary)] text-[13px] leading-4 font-sans">
                     {item.postCount ? item.postCount.toLocaleString() + 'K posts' : item.postCount}
                 </div>
             </div>
@@ -30,7 +30,7 @@ export default function Topic({ item }) {
                 <Popover.Button className="rounded-full p-2 group hover:bg-[#1d9bf01a] w-[34.75px] h-[34.75px] text-center hover:text-[#1d9bf0]">
                     <button>
                         <svg viewBox="0 0 24 24" aria-hidden="true" width={18.75} height={18.75} >
-                            <path fill="currentColor" className="hover:fill-[#3b82f680]" d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                            <path fill="var(--base-secondary)" className="hover:fill-[#3b82f680]" d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
                             </path>
                         </svg>
                     </button>

@@ -6,20 +6,20 @@ const initialState = {
         id: 1,
         userName: "Nihad",
         avatar: "src/assets/imgs/image 46.png",
-        fullName: "nihadbekirli8@gmail.com"
+        fullName: "nihadbekirli8"
     },
     accounts: [
         {
             id: 1,
             userName: "Nihad",
             avatar: "src/assets/imgs/image 46.png",
-            fullName: "nihadbekirli8@gmail.com"
+            fullName: "nihadbekirli8"
         },
         {
             id: 2,
             userName: "Bekir",
             avatar: "src/assets/imgs/image 46.png",
-            fullName: "bekirli8@gmail.com"
+            fullName: "bekirli8"
         },
     ]
 }

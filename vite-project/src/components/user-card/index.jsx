@@ -19,7 +19,7 @@ export default function UserCard({ user }) {
                         )
                     }
                 </div>
-                <div className="text-left">
+                <div className="text-left text-[color:var(--base-secondary)]">
                     @{user.userName}
                 </div>
             </div>

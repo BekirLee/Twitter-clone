@@ -25,7 +25,7 @@ const initialState = {
         secondary: "#8ecdf8",
         base: "#f7f9f9",
         // baseSecondary: '#71767b'
-        baseSecondary: 'red'
+        baseSecondary: '#8b98a5'
     },
     fontSize: 16
 }
