@@ -22,7 +22,7 @@ const initialState = {
     color: {
         primary: "#1d9bf0",
         secondary: "#8ecdf8",
-        base: "red"
+        base: "#f7f9f9"
     },
     fontSize: 16
 }
