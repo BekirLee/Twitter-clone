@@ -5,7 +5,8 @@ const initialState = {
     // backgroundColor: {
     //     primary: '#000',
     //     secondary: '#16181c',
-    //     third: '#273340'
+    //     third: '#273340',
+    // modal: '#5b708366'
     // },
     // color: {
     //     primary: "#1d9bf0",
@@ -19,7 +20,8 @@ const initialState = {
     // backgroundColor: {
     //     primary: '#15202b',
     //     secondary: '#1e2732',
-    //     third: '#273340'
+    //     third: '#273340',
+    // modal: '#5b708366'
     // },
     // color: {
     //     primary: "#1d9bf0",

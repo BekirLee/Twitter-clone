@@ -11,7 +11,7 @@ export default function ApperanceModal() {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, placeat.
                 </p>
                 <div className="mx-8 mb-4">
-                    <div className="border border-[#2f3336] flex py-3 gap-3 rounded-2xl">
+                    <div className="border border-[color:var(--background-third)] flex py-3 gap-3 rounded-2xl">
                         <svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" width={40} height={40} className="rounded-full object-cover">
                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
                             </path>
@@ -29,7 +29,7 @@ export default function ApperanceModal() {
                                     @X
                                 </div>
                             </header>
-                            <div className="leading-5 text-[#e7e9ea] text-[15px]">
+                            <div className="leading-5 text-[color:va(--color-base)] text-[15px]">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officiis sapiente accusamus cumque mollitia natus <span className="text-[#1d9bf0] hover:text-[color:var(--base-secondary)] cursor-pointer">@X</span> sed incidunt earum rerum enim, at, doloribus iure dignissimos maiores eius magnam debitis cum.
                             </div>
                         </div>
