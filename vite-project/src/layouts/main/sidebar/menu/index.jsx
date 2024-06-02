@@ -16,11 +16,11 @@ export default function Menu() {
                 maninMenu.map((menu, index) => (
                     <NavLink to={typeof menu.path === "function" ? menu.path() : menu.path} className='py-1 group' key={index}>
                         {({ isActive }) => (
-                            <div className={classNames("inline-flex items-center  justify-start gap-5 px-2 group-hover:bg-[#eff3f41a] rounded-full py-3 relative ", { "font-bold": isActive })}>
+                            <div className={classNames("inline-flex items-center  justify-start gap-5 px-2 group-hover:bg-[color:var(--background-third)] rounded-full py-3 relative ", { "font-bold": isActive })}>
 
 
                                 {menu?.notifications && (
-                                    <span className="absolute top-[6px] left-[20px] bg-[color:var(--color-primary)] rounded-full w-[18px] h-[18px] flex justify-center items-center">4</span>
+                                    <span className="absolute top-[6px] left-[20px] border border-[color:var(--background-primary)] bg-[color:var(--color-primary)] text-[color:var(--background-primary)] rounded-full w-[18px] h-[18px] flex justify-center items-center">4</span>
                                 )}
                                 {!isActive && menu.icon.passive}
 

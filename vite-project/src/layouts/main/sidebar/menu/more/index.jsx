@@ -4,11 +4,11 @@ import { setModal } from "~/store/modal/actions"
 
 export default function More() {
     return (
-        <Popover className="box-shadow-[ rgba(0, 0, 0, 0.15) 0px 2px 8px] relative p-3  text-[color:var(--color-base)]">
+        <Popover className="box-shadow-[ rgba(0, 0, 0, 0.15) 0px 2px 8px] relative text-[color:var(--color-base)]">
 
-            <Popover.Button className='py-1'>
+            <Popover.Button className='py-1 group'>
 
-                <div className="flex items-center items-center rounded-full py-3 relative">
+                <div className="flex items-center items-center rounded-full py-3 pl-2 relative group-hover:bg-[color:var(--background-third)]">
                     <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[26.25px] h-[26.25px]">
                         <path fill="currentColor" d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
                         </path>
@@ -20,7 +20,7 @@ export default function More() {
             </Popover.Button>
 
             <Popover.Panel className="shadow-box w-[318px] rounded-xl transition-colors bg-[color:var(--background-primary)] overflow-hidden absolute bottom-0 left-0">
-                <button className='py-1 w-[100%] hover:bg-[#eff3f41a]'>
+                <button className='py-1 w-[100%] hover:bg-[color:var(--background-secondary)]'>
 
                     <div className="flex justify-start items-center rounded-full py-3 relative">
                         <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[26.25px] h-[26.25px] mx-4">
@@ -32,7 +32,7 @@ export default function More() {
                     </div>
                 </button>
 
-                <button className='py-1 w-[100%] hover:bg-[#eff3f41a]'>
+                <button className='py-1 w-[100%] hover:bg-[color:var(--background-secondary)]'>
 
                     <div className="flex justify-start items-center rounded-full py-3 relative">
                         <svg viewBox="0 0 24 24" aria-hidden="true" className="w-[26.25px] h-[26.25px] mx-4">
@@ -47,7 +47,7 @@ export default function More() {
                 <Disclosure>
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
+                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center hover:bg-[color:var(--background-secondary)]">
                                 Is team pricing available?
                                 <svg className={classNames({ "rotate-180 text-[color:var(--color-primary)]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
                                     <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
@@ -63,7 +63,7 @@ export default function More() {
                 <Disclosure>
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
+                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center hover:bg-[color:var(--background-secondary)]">
                                 Find All frineds and tweet
                                 <svg className={classNames({ "rotate-180  text-[color:var(--color-primary)]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
                                     <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
@@ -79,7 +79,7 @@ export default function More() {
                 <Disclosure>
                     {({ open }) => (
                         <>
-                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center">
+                            <Disclosure.Button className="h-[52px] py-2 flex justify-between w-full px-4 items-center hover:bg-[color:var(--background-secondary)]">
                                 Display
                                 <svg className={classNames({ "rotate-180  text-[color:var(--color-primary)]": open })} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width={'18.75'} height={"18.75"}>
                                     <path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
