@@ -28,10 +28,10 @@ const initialState = {
     // color: {
     //     primary: "#1d9bf0",
     //     secondary: "#8ecdf8",
-    //     base: "#f7f9f9",
+    // base: "#f7f9f9",
+    // baseSecondary: '#8b98a5',
+    // baseSecondary: '#71767b',
     // boxShadow: 'rgba(101,119,134,0.2) 0px 0px 15px rgba(101,119,134,0.2) 0px 0px 3px 1px',
-    //     // baseSecondary: '#71767b'
-    //     baseSecondary: '#8b98a5'
     // },
     // fontSize: 16
 
@@ -45,8 +45,8 @@ const initialState = {
     // color: {
     //     primary: "#1d9bf0",
     //     secondary: "#8ecdf8",
-    //     base: "#0f1419",
-    //     // baseSecondary: '#71767b'
+    // base: "#0f1419",
+    // baseSecondary: '#536471'
     //     baseSecondary: '#8b98a5'
     // },
     // boxShadow: 'rgba(101, 119, 134, 0.2) 0px 0px 15px ,rgba(101,119,134,0.15) 0px 0px 3px 1px',

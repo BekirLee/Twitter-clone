@@ -1,5 +1,6 @@
 import store from "..";
-import { _setModal, _removeModal, _setBackground, _setFontsize, _setColor } from ".";
+import { _setBackground, _setFontsize, _setColor } from ".";
+import { setModal, removeModal } from "../modal/actions";
 
 
 export const setBackground = data => store.dispatch(_setBackground(data));

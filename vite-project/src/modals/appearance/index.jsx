@@ -1,9 +1,10 @@
 import classNames from "classnames";
-import { useSelector } from "react-redux";
+import { setBackground, setColor } from "~/store/appearance/actions";
+import { useAppearance } from "~/store/appearance/hooks";
 
-export default function ApperanceModal() {
-    const backgroundColor = useSelector(state => state.appearance.backgroundColor);
-    
+export default function ApperanceModal({ close }) {
+    const { backgroundColor, color } = useAppearance()
+
     return (
         <div className="w-[600px]">
 
@@ -44,25 +45,78 @@ export default function ApperanceModal() {
                         BackGround
                     </h6>
 
-                    <div className="grid grid-cols-3 py-1 px-3 bg-[color:var(--background-secondary)] rounded-2xl">
-                        <button className={classNames("h-16 px-5 bg-white text-[#0f1419] font-bold rounded border-2 ", {
-                            "!border-[color:var(--color-primary)]": backgroundColor.name === 'light'
-                        })}>
+                    <div className="grid grid-cols-3 gap-[10px] py-1 px-3 bg-[color:var(--background-secondary)] rounded-2xl">
+                        <button
+                            onClick={() => {
+                                setColor({
+                                    ...color,
+                                    base: "#0f1419",
+                                    baseSecondary: '#536471'
+                                }
+
+                                )
+                                setBackground({
+                                    name: 'light',
+                                    primary: '#fff',
+                                    secondary: '#f7f9f9',
+                                    third: '#eff3f4',
+                                    modal: '#5b708366'
+                                })
+                            }}
+                            className={classNames("h-16 px-5 bg-white text-[#0f1419] font-bold rounded border border-white/10 ", {
+                                "!border-[color:var(--color-primary)]": backgroundColor.name === 'light'
+                            })}>
                             Default
                         </button>
 
-                        <button className="h-16 px-5 bg-[#15202b] text-[#f7f9f9] font-bold rounded border-2 border-[color:var(--color-primary)]">
+                        <button
+                            onClick={() => {
+                                setColor({
+                                    ...color,
+                                    base: "#f7f9f9",
+                                    baseSecondary: '#8b98a5',
+                                })
+                                setBackground({
+                                    name: 'losh',
+                                    primary: '#15202b',
+                                    secondary: '#1e2732',
+                                    third: '#273340',
+                                    modal: '#5b708366'
+                                })
+                            }}
+                            className={classNames("h-16 px-5 bg-[#15202b] text-[#f7f9f9] font-bold rounded border border-white/10", {
+                                "!border-[color:var(--color-primary)]": backgroundColor.name === 'losh'
+                            })}>
                             Losh
                         </button>
 
-                        <button className="h-16 px-5 bg-black text-[#f7f9f9] font-bold rounded border-2 border-[color:var(--color-primary)]">
+                        <button
+                            onClick={() => {
+                                setColor({
+                                    ...color,
+                                    base: "#e7e9ea",
+                                    baseSecondary: '#71767b'
+                                })
+                                setBackground({
+                                    name: 'darker',
+                                    primary: '#000',
+                                    secondary: '#16181c',
+                                    third: '#273340',
+                                    modal: '#5b708366'
+                                })
+                            }}
+                            className={classNames("h-16 px-5 bg-black text-[#f7f9f9] font-bold rounded border border-white/10", {
+                                "!border-[color:var(--color-primary)]": backgroundColor.name === 'darker'
+                            })}>
                             Lights Off
                         </button>
 
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <button className="">
+                        <button
+                            onClick={close}
+                            className="">
                             Done
                         </button>
                     </div>
