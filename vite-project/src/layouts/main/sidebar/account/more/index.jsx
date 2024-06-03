@@ -40,11 +40,11 @@ export default function More() {
                 ))
             }
             <div className="h-px bg-[#2f3336] my-3"></div>
-            <button className="py-3 px-4 text-left transition-colors hover:bg-[#18161C] w-full font-bold">
+            <button className="py-3 px-4 text-left transition-colors hover:bg-[color:var(--background-secondary)] w-full font-bold">
                 add new account
             </button>
 
-            <button className="py-3 px-4 text-left transition-colors hover:bg-[#18161C] w-full font-bold">
+            <button className="py-3 px-4 text-left transition-colors hover:bg-[color:var(--background-secondary)] w-full font-bold">
                 Log out from @{currentAccount ? currentAccount.userName : 'NO account'}
             </button>
         </div >

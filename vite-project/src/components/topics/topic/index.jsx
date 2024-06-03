@@ -6,7 +6,7 @@ export default function Topic({ item }) {
     return (
         <Link
             to='/'
-            className="py-3 px-4 transition-colors flex justify-between hover:bg-[#16181c94]"
+            className="py-3 px-4 transition-colors flex justify-between hover:bg-[color:var(--background-third)]"
         >
             <div className="">
 

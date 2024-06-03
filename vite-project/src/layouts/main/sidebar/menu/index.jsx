@@ -16,7 +16,7 @@ export default function Menu() {
                 maninMenu.map((menu, index) => (
                     <NavLink to={typeof menu.path === "function" ? menu.path() : menu.path} className='py-1 group' key={index}>
                         {({ isActive }) => (
-                            <div className={classNames("inline-flex items-center  justify-start gap-5 px-2 group-hover:bg-[color:var(--background-third)] rounded-full py-3 relative ", { "font-bold": isActive })}>
+                            <div className={classNames("inline-flex items-center  justify-start gap-5 px-2 group-hover:bg-[color:var(--background-secondary)] rounded-full py-3 relative ", { "font-bold": isActive })}>
 
 
                                 {menu?.notifications && (
