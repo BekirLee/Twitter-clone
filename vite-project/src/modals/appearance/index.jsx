@@ -42,27 +42,33 @@ export default function ApperanceModal({ close }) {
                         </div>
                     </div>
 
-                    <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 leading-5">
+                    <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 mt-2 leading-5">
+                        Font
+                    </h6>
+
+                    <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center gap-5">
+                        <div className="text-[13px]">AA</div>
+                        <div className="h-1 flex-1 bg-[color:var(--color-secondary)] rounded-full"></div>
+                        <div className="text-[20px]">AA</div>
+                    </div>
+
+                    <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 mt-2 leading-5">
                         Colors
                     </h6>
 
-                    <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 leading-5">
-                        BackGround
-                    </h6>
-
-                    <div className="gap-[10px] py-2 px-4 bg-[color:var(--background-secondary)] rounded-2xl flex items-center justify-around">
+                    <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center justify-around">
                         {colors.map((c, index) => (
                             <button
                                 onClick={() => {
                                     setColor({
                                         ...color,
-                                        primary: c
+                                        ...c
                                     })
                                 }}
-                                style={{ '--bg': c }}
+                                style={{ '--bg': c.primary }}
                                 className="w-11 h-11 rounded-full bg-[color:var(--bg)]"
                             >
-                                {color.primary == c && (
+                                {color.primary == c.primary && (
 
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-[100%] h-[25px]" viewBox="0 0 50 50">
                                         <path fill="currentColor" d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z"></path>
@@ -72,6 +78,10 @@ export default function ApperanceModal({ close }) {
                             </button>
                         ))}
                     </div>
+
+                    <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 leading-5">
+                        BackGround
+                    </h6>
 
                     <div className="grid grid-cols-3 gap-[10px] py-2 px-4 bg-[color:var(--background-secondary)] rounded-2xl">
                         <button

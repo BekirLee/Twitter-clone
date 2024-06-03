@@ -13,7 +13,7 @@ export default function SidebarSection({ title, children, more }) {
                 {more && (
                     <Link
                         to={more}
-                        className="flex items-center px-4 py-3 text-[#1d9bf0] text-[13px] hover:bg-[color:var(--background-third)]"
+                        className="flex items-center px-4 py-3 text-[color:var(--color-primary)] text-[13px] hover:bg-[color:var(--background-third)]"
                     >
                         Show More
                     </Link>
