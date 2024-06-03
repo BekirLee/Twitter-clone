@@ -34,6 +34,31 @@ export default function ApperanceModal() {
                             </div>
                         </div>
                     </div>
+
+                    <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 leading-5">
+                        BackGround
+                    </h6>
+
+                    <div className="grid grid-cols-3 py-1 px-3 bg-[color:var(--background-secondary)] rounded-2xl">
+                        <button className="h-16 px-5 bg-white text-[#0f1419] rounded ring ring-[color:var(--color-primary)]">
+                            los
+                        </button>
+
+                        <button>
+                            los
+                        </button>
+
+                        <button>
+                            los
+                        </button>
+
+                    </div>
+
+                    <div className="flex items-center justify-center">
+                        <button className="">
+                            Done
+                        </button>
+                    </div>
                 </div>
             </div>
         </div >
