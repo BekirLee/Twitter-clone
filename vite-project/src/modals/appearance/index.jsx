@@ -1,4 +1,9 @@
+import classNames from "classnames";
+import { useSelector } from "react-redux";
+
 export default function ApperanceModal() {
+    const backgroundColor = useSelector(state => state.appearance.backgroundColor);
+    
     return (
         <div className="w-[600px]">
 
@@ -40,16 +45,18 @@ export default function ApperanceModal() {
                     </h6>
 
                     <div className="grid grid-cols-3 py-1 px-3 bg-[color:var(--background-secondary)] rounded-2xl">
-                        <button className="h-16 px-5 bg-white text-[#0f1419] rounded ring ring-[color:var(--color-primary)]">
-                            los
+                        <button className={classNames("h-16 px-5 bg-white text-[#0f1419] font-bold rounded border-2 ", {
+                            "!border-[color:var(--color-primary)]": backgroundColor.name === 'light'
+                        })}>
+                            Default
                         </button>
 
-                        <button>
-                            los
+                        <button className="h-16 px-5 bg-[#15202b] text-[#f7f9f9] font-bold rounded border-2 border-[color:var(--color-primary)]">
+                            Losh
                         </button>
 
-                        <button>
-                            los
+                        <button className="h-16 px-5 bg-black text-[#f7f9f9] font-bold rounded border-2 border-[color:var(--color-primary)]">
+                            Lights Off
                         </button>
 
                     </div>

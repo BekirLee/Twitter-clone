@@ -1,27 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    //
-    // backgroundColor: {
-    //     primary: '#000',
-    //     secondary: '#16181c',
-    //     third: '#273340',
-    // modal: '#5b708366'
-    // },
-    // color: {
-    //     primary: "#1d9bf0",
-    //     secondary: "#8ecdf8",
-    //     base:"#e7e9ea"
-    // baseSecondary: '#71767b'
-    // },
-    // boxShadow: 'rgba(101,119,134,0.2) 0px 0px 15px rgba(101,119,134,0.2) 0px 0px 3px 1px',
-    // fontSize: 16
+
+    backgroundColor: {
+        name: 'darker',
+        primary: '#000',
+        secondary: '#16181c',
+        third: '#273340',
+        modal: '#5b708366'
+    },
+    color: {
+        primary: "#1d9bf0",
+        secondary: "#8ecdf8",
+        base: "#e7e9ea",
+        baseSecondary: '#71767b'
+    },
+    boxShadow: 'rgba(101,119,134,0.2) 0px 0px 15px rgba(101,119,134,0.2) 0px 0px 3px 1px',
+    fontSize: 16
 
     // backgroundColor: {
+    // name: 'light',
     //     primary: '#15202b',
     //     secondary: '#1e2732',
     //     third: '#273340',
-    // modal: '#5b708366'
+    // modal: '#5b708366'   
     // },
     // color: {
     //     primary: "#1d9bf0",
@@ -33,21 +35,22 @@ const initialState = {
     // },
     // fontSize: 16
 
-    backgroundColor: {
-        primary: '#fff',
-        secondary: '#f7f9f9',
-        third: '#eff3f4',
-        modal: '#5b708366'
-    },
-    color: {
-        primary: "#1d9bf0",
-        secondary: "#8ecdf8",
-        base: "#0f1419",
-        // baseSecondary: '#71767b'
-        baseSecondary: '#8b98a5'
-    },
-    boxShadow: 'rgba(101, 119, 134, 0.2) 0px 0px 15px ,rgba(101,119,134,0.15) 0px 0px 3px 1px',
-    fontSize: 16
+    // backgroundColor: {
+    //     name: 'losh',
+    //     primary: '#fff',
+    //     secondary: '#f7f9f9',
+    //     third: '#eff3f4',
+    //     modal: '#5b708366'
+    // },
+    // color: {
+    //     primary: "#1d9bf0",
+    //     secondary: "#8ecdf8",
+    //     base: "#0f1419",
+    //     // baseSecondary: '#71767b'
+    //     baseSecondary: '#8b98a5'
+    // },
+    // boxShadow: 'rgba(101, 119, 134, 0.2) 0px 0px 15px ,rgba(101,119,134,0.15) 0px 0px 3px 1px',
+    // fontSize: 16
 }
 
 const appearance = createSlice({
