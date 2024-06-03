@@ -15,7 +15,7 @@ const initialState = {
         base: "#e7e9ea",
         baseSecondary: '#71767b'
     },
-    boxShadow: 'rgba(101,119,134,0.2) 0px 0px 15px rgba(101,119,134,0.2) 0px 0px 3px 1px',
+    boxShadow: 'rgba(101,119,134,0.2) 0px 0px 15px, rgba(101,119,134,0.2) 0px 0px 3px 1px',
     fontSize: 16
 
     // backgroundColor: {

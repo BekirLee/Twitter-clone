@@ -45,7 +45,7 @@ export default function ApperanceModal({ close }) {
                         BackGround
                     </h6>
 
-                    <div className="grid grid-cols-3 gap-[10px] py-1 px-3 bg-[color:var(--background-secondary)] rounded-2xl">
+                    <div className="grid grid-cols-3 gap-[10px] py-2 px-4 bg-[color:var(--background-secondary)] rounded-2xl">
                         <button
                             onClick={() => {
                                 setColor({
@@ -63,10 +63,26 @@ export default function ApperanceModal({ close }) {
                                     modal: '#5b708366'
                                 })
                             }}
-                            className={classNames("h-16 px-5 bg-white text-[#0f1419] font-bold rounded border border-white/10 ", {
+                            className={classNames("h-16 pr-3 pl-2 bg-white text-[#0f1419] font-bold rounded group border border-white/10 flex items-center gap-[10px]", {
                                 "!border-[color:var(--color-primary)]": backgroundColor.name === 'light'
                             })}>
-                            Default
+
+                            <div className=" group-hover:bg-black/10 rounded-full flex items-center justify-center border border-black/10">
+                                <div className={classNames("w-5 h-5 flex items-center justify-center ml-auto", {
+                                    "!border-[color:var(--color-primary)]": backgroundColor.name == 'light'
+                                })}>
+                                    {backgroundColor.name == 'light' &&
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="#1a8cd8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                            </path>
+                                        </svg>
+                                    }
+                                </div>
+                            </div>
+
+                            <div className="">
+                                Default
+                            </div>
                         </button>
 
                         <button
@@ -84,9 +100,23 @@ export default function ApperanceModal({ close }) {
                                     modal: '#5b708366'
                                 })
                             }}
-                            className={classNames("h-16 px-5 bg-[#15202b] text-[#f7f9f9] font-bold rounded border border-white/10", {
+                            className={classNames("h-16 pr-3 pl-2 bg-[#15202b] text-[#f7f9f9] font-bold rounded group border border-white/10 flex items-center justify-center gap-[10px]", {
                                 "!border-[color:var(--color-primary)]": backgroundColor.name === 'losh'
                             })}>
+
+
+                            <div className="group-hover:bg-white/5 rounded-full flex items-center  justify-center border border-white/10">
+                                <div className={classNames("w-5 h-5 flex items-center justify-center ml-auto", {
+                                    "!border-[color:var(--color-primary)]": backgroundColor.name == 'losh'
+                                })}>
+                                    {backgroundColor.name == 'losh' &&
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="#1a8cd8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                            </path>
+                                        </svg>
+                                    }
+                                </div>
+                            </div>
                             Losh
                         </button>
 
@@ -105,9 +135,22 @@ export default function ApperanceModal({ close }) {
                                     modal: '#5b708366'
                                 })
                             }}
-                            className={classNames("h-16 px-5 bg-black text-[#f7f9f9] font-bold rounded border border-white/10", {
+                            className={classNames("h-16 pr-3 pl-2 whitespace-nowrap bg-black text-[#f7f9f9] font-bold group rounded border border-white/10 flex items-center justify-center gap-[10px]", {
                                 "!border-[color:var(--color-primary)]": backgroundColor.name === 'darker'
                             })}>
+
+                            <div className="group-hover:bg-white/10 rounded-full flex items-center justify-center border border-white/20">
+                                <div className={classNames("w-5 h-5 flex items-center justify-center ml-auto", {
+                                    "!border-[color:var(--color-primary)]": backgroundColor.name == 'darker'
+                                })}>
+                                    {backgroundColor.name == 'darker' &&
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path fill="#1a8cd8" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                                            </path>
+                                        </svg>
+                                    }
+                                </div>
+                            </div>
                             Lights Off
                         </button>
 
