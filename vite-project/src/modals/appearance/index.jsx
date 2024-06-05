@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { setBackground, setColor } from "~/store/appearance/actions";
 import { useAppearance } from "~/store/appearance/hooks";
-import { colors } from "~/utilits/consts";
+import { colors, fontSizes } from "~/utilits/consts";
 
 export default function ApperanceModal({ close }) {
     const { backgroundColor, color } = useAppearance()
@@ -48,7 +48,15 @@ export default function ApperanceModal({ close }) {
 
                     <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center gap-5">
                         <div className="text-[13px]">AA</div>
-                        <div className="h-1 flex-1 bg-[color:var(--color-secondary)] rounded-full"></div>
+                        <div className="h-1 flex-1 flex items-center justify-between bg-[color:var(--color-secondary)] rounded-full">
+                            {
+                                fontSizes.map(fs => (
+                                    <button className="w-8 h-8 rounded-full flex items-center justify-center first:-ml-2 last:-mr-2">
+                                        <div className="w-3 h-3 rounded-full bg-[color:var(--color-secondary)]" ></div>
+                                    </button>
+                                ))
+                            }
+                        </div>
                         <div className="text-[20px]">AA</div>
                     </div>
 
