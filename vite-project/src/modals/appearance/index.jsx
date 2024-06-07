@@ -48,10 +48,10 @@ export default function ApperanceModal({ close }) {
 
                     <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center gap-5">
                         <div className="text-[13px]">AA</div>
-                        <div className="h-1 flex-1 relative flex items-center justify-between bg-[color:var(--color-secondary)] rounded-full">
+                        <div className="h-1 flex-1  flex items-center justify-between bg-[color:var(--color-secondary)] rounded-full">
                             {
                                 fontSizes.map(fs => (
-                                    <button className="before:absolute before:w-8 before:h-8 before:inset-0 before:opacity-10 before:rounded-full before:hover:bg-[color:var(--color-primary)] w-8 h-8 rounded-full flex items-center justify-center first:-ml-2 last:-mr-2">
+                                    <button className="relative before:absolute before:w-8 before:h-8 before:inset-0 before:opacity-10 before:rounded-full before:hover:bg-[color:var(--color-primary)] w-8 h-8 rounded-full flex items-center justify-center first:-ml-2 last:-mr-2">
                                         <div className="w-3 h-3 rounded-full bg-[color:var(--color-secondary)]" ></div>
                                     </button>
                                 ))
