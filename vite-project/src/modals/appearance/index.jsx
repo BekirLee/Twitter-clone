@@ -1,11 +1,17 @@
 import classNames from "classnames";
-import { setBackground, setColor } from "~/store/appearance/actions";
+import { useEffect, useState } from "react";
+// import { c } from "vite/dist/node/types.d-aGj9QkWt";
+import { setBackground, setColor, setFontsize } from "~/store/appearance/actions";
 import { useAppearance } from "~/store/appearance/hooks";
 import { colors, fontSizes } from "~/utilits/consts";
 
 export default function ApperanceModal({ close }) {
-    const { backgroundColor, color } = useAppearance()
+    const { backgroundColor, color, fontSize } = useAppearance();
+    const [fontSizePercent, setFontsizePercent] = useState(0);
 
+    useEffect(() => {
+        setFontsizePercent(document.querySelector('.active-font-size').offsetLeft)
+    }, [fontSize])
     return (
         <div className="w-[600px]">
 
@@ -48,14 +54,26 @@ export default function ApperanceModal({ close }) {
 
                     <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center gap-5">
                         <div className="text-[13px]">AA</div>
-                        <div className="h-1 flex-1  flex items-center justify-between bg-[color:var(--color-secondary)] rounded-full">
-                            {
-                                fontSizes.map(fs => (
-                                    <button className="relative before:absolute before:w-8 before:h-8 before:inset-0 before:opacity-10 before:rounded-full before:hover:bg-[color:var(--color-primary)] w-8 h-8 rounded-full flex items-center justify-center first:-ml-2 last:-mr-2">
-                                        <div className="w-3 h-3 rounded-full bg-[color:var(--color-secondary)]" ></div>
-                                    </button>
-                                ))
-                            }
+                        <div className="h-1 flex-1  flex items-center justify-between bg-[color:var(--color-secondary)] rounded-full relative">
+                            <div style={{ width: fontSizePercent }} className="h-full absolute rounded-full top-0 left-0 bg-[color:var(--color-primary)]" />
+                            <div className="flex justify-between items-center w-[calc(100%+16px)] absolute -top-3.5 -left-[8px]">
+                                {
+                                    fontSizes.map(fs => (
+                                        <button
+                                            onClick={() => setFontsize(fs)}
+                                            className={classNames("relative before:absolute before:w-8 before:h-8 before:inset-0 before:opacity-10 before:rounded-full before:hover:bg-[color:var(--color-primary)] w-8 h-8 rounded-full flex items-center justify-center ", {
+                                                "active-font-size": fs == fontSize
+                                            })}>
+                                            <div className={classNames("w-3 h-3 rounded-full bg-[color:var(--color-secondary)]",
+                                                {
+                                                    "w-4 h-4": fs == fontSize,
+                                                    "!bg-[color:var(--color-primary)]": fs <= fontSize
+                                                }
+                                            )} ></div>
+                                        </button>
+                                    ))
+                                }
+                            </div>
                         </div>
                         <div className="text-[20px]">AA</div>
                     </div>

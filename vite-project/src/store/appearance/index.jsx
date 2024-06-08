@@ -64,7 +64,7 @@ const appearance = createSlice({
         _setColor: (state, action) => {
             state.color = action.payload
         },
-        _setFontsize: state => {
+        _setFontsize: (state, action) => {
             state.fontSize = action.payload
         }
     }
