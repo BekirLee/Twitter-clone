@@ -67,6 +67,7 @@ export default function ApperanceModal({ close }) {
                     <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center justify-around">
                         {colors.map((c, index) => (
                             <button
+                                key={index}
                                 onClick={() => {
                                     setColor({
                                         ...color,

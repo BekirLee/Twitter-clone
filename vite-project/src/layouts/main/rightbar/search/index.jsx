@@ -30,7 +30,6 @@ export default function Search() {
                     className="w-full h-full bg-transparent rounded-full outline-none pl-[1px] placeholder-[color:var(--base-secondary)]  text-[15px]"
                     value={query}
                     onChange={e => setQuery(e.target.value)}
-                    // onBlur={() => setFocus(false)}
                     onFocus={() => setFocus(true)}
                 />
 
