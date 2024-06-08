@@ -6,7 +6,7 @@ export default function More() {
     const accounts = useAccounts()
     const currentAccount = useAccount();
     // let stringAccounts = JSON.stringify(accounts);
-    console.log(currentAccount.id)
+    // console.log(currentAccount.id)
     return (
         <div >
             {

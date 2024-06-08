@@ -8,7 +8,7 @@ export default function Button({ size, variant, className, children, ...props })
             {
                 "px-4 h-8": size === 'small',
                 "px-4 h-9": size === 'normal',
-                "px-4 text-[17px] h-[52px] w-full": size === 'large',
+                "px-4 text-[17px] h-[52px] w-[75%]": size === 'large',
                 "bg-[color:var(--color-primary)] hover:opacity-90": variant === 'primary',
                 "bg-white text-black": variant === 'white',
                 "border border-[#b4b4b4] hover:border-[#67070f] hover:bg-[#f4212e1a] hover:text-[#f4212e] bg-black": variant === 'white-outline',

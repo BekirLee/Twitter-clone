@@ -10,21 +10,23 @@ export default function ApperanceModal({ close }) {
     const [fontSizePercent, setFontsizePercent] = useState(0);
 
     useEffect(() => {
-        setFontsizePercent(document.querySelector('.active-font-size').offsetLeft)
+        setTimeout(() => {
+            setFontsizePercent(document.querySelector('.active-font-size').offsetLeft)
+        }, 1)
     }, [fontSize])
     return (
         <div className="w-[600px]">
 
-            <h3 className="w-[600px] mt-8 mb-3 text-[23px] leading-7 font-extrabold text-center">
+            <h3 className="w-[600px] mt-5 mb-2 text-[1.438rem] leading-7 font-extrabold text-center">
                 change
             </h3>
 
-            <div className="p-8 pt-0">
-                <p className="text-center text-[color:var(--base-secondary)] text-[15px] leading-5 mb-5">
+            <div className="px-8 pb-1 pt-0">
+                <p className="text-center text-[color:var(--base-secondary)] text-[0.938rem] leading-5 mb-5">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, placeat.
                 </p>
                 <div className="mx-8 mb-4">
-                    <div className="border border-[color:var(--background-third)] flex py-3 gap-3 rounded-2xl">
+                    <div className=" px-2 border border-[color:var(--background-third)] flex py-3 gap-3 rounded-2xl">
                         <svg viewBox="0 0 24 24" fill="currentcolor" aria-hidden="true" width={40} height={40} className="rounded-full object-cover">
                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
                             </path>
@@ -53,9 +55,9 @@ export default function ApperanceModal({ close }) {
                     </h6>
 
                     <div className="gap-[10px] py-2 px-4 mb-3 bg-[color:var(--background-secondary)] rounded-2xl flex items-center gap-5">
-                        <div className="text-[13px]">AA</div>
+                        <div className="text-[0.813rem]">AA</div>
                         <div className="h-1 flex-1  flex items-center justify-between bg-[color:var(--color-secondary)] rounded-full relative">
-                            <div style={{ width: fontSizePercent }} className="h-full absolute rounded-full top-0 left-0 bg-[color:var(--color-primary)]" />
+                            <div style={{ width: fontSizePercent + 5 }} className="h-full absolute rounded-full top-0 left-0 bg-[color:var(--color-primary)]" />
                             <div className="flex justify-between items-center w-[calc(100%+16px)] absolute -top-3.5 -left-[8px]">
                                 {
                                     fontSizes.map(fs => (
@@ -75,7 +77,7 @@ export default function ApperanceModal({ close }) {
                                 }
                             </div>
                         </div>
-                        <div className="text-[20px]">AA</div>
+                        <div className="text-[1.25rem]">AA</div>
                     </div>
 
                     <h6 className="text-[color:var(--base-secondary)] font-bold text-[13px] mb-1 mt-2 leading-5">
@@ -93,7 +95,7 @@ export default function ApperanceModal({ close }) {
                                     })
                                 }}
                                 style={{ '--bg': c.primary }}
-                                className="w-11 h-11 rounded-full bg-[color:var(--bg)]"
+                                className="w-[44px] h-[44px] rounded-full bg-[color:var(--bg)]"
                             >
                                 {color.primary == c.primary && (
 
@@ -128,12 +130,12 @@ export default function ApperanceModal({ close }) {
                                     modal: '#5b708366'
                                 })
                             }}
-                            className={classNames("h-16 pr-3 pl-2 bg-white text-[#0f1419] font-bold rounded group border border-white/10 flex items-center gap-[10px]", {
+                            className={classNames("h-[62px] pr-3 pl-2 bg-white text-[#0f1419] font-bold rounded group border border-white/10 flex items-center gap-[10px]", {
                                 "!border-[color:var(--color-primary)]": backgroundColor.name === 'light'
                             })}>
 
                             <div className=" group-hover:bg-black/10 rounded-full flex items-center justify-center border border-black/10">
-                                <div className={classNames("w-5 h-5 flex items-center justify-center ml-auto", {
+                                <div className={classNames("w-[20px] h-[20px] flex items-center justify-center ml-auto", {
                                     "!border-[color:var(--color-primary)]": backgroundColor.name == 'light'
                                 })}>
                                     {backgroundColor.name == 'light' &&
@@ -145,7 +147,7 @@ export default function ApperanceModal({ close }) {
                                 </div>
                             </div>
 
-                            <div className="">
+                            <div className="truncate">
                                 Default
                             </div>
                         </button>
@@ -165,13 +167,13 @@ export default function ApperanceModal({ close }) {
                                     modal: '#5b708366'
                                 })
                             }}
-                            className={classNames("h-16 pr-3 pl-2 bg-[#15202b] text-[#f7f9f9] font-bold rounded group border border-white/10 flex items-center justify-center gap-[10px]", {
+                            className={classNames("h-[62px] pr-3 pl-2 bg-[#15202b] text-[#f7f9f9] font-bold rounded group border border-white/10 flex items-center justify-center gap-[10px]", {
                                 "!border-[color:var(--color-primary)]": backgroundColor.name === 'losh'
                             })}>
 
 
                             <div className="group-hover:bg-white/5 rounded-full flex items-center  justify-center border border-white/10">
-                                <div className={classNames("w-5 h-5 flex items-center justify-center ml-auto", {
+                                <div className={classNames("w-[20px] h-[20px] flex items-center justify-center ml-auto", {
                                     "!border-[color:var(--color-primary)]": backgroundColor.name == 'losh'
                                 })}>
                                     {backgroundColor.name == 'losh' &&
@@ -182,7 +184,9 @@ export default function ApperanceModal({ close }) {
                                     }
                                 </div>
                             </div>
-                            Losh
+                            <div className="truncate">
+                                Losh
+                            </div>
                         </button>
 
                         <button
@@ -200,12 +204,12 @@ export default function ApperanceModal({ close }) {
                                     modal: '#5b708366'
                                 })
                             }}
-                            className={classNames("h-16 pr-3 pl-2 whitespace-nowrap bg-black text-[#f7f9f9] font-bold group rounded border border-white/10 flex items-center justify-center gap-[10px]", {
+                            className={classNames("h-[62px] pr-3 pl-2 whitespace-nowrap bg-black text-[#f7f9f9] font-bold group rounded border border-white/10 flex items-center justify-center gap-[10px]", {
                                 "!border-[color:var(--color-primary)]": backgroundColor.name === 'darker'
                             })}>
 
                             <div className="group-hover:bg-white/10 rounded-full flex items-center justify-center border border-white/20">
-                                <div className={classNames("w-5 h-5 flex items-center justify-center ml-auto", {
+                                <div className={classNames("w-[20px] h-[20px] flex items-center justify-center ml-auto", {
                                     "!border-[color:var(--color-primary)]": backgroundColor.name == 'darker'
                                 })}>
                                     {backgroundColor.name == 'darker' &&
@@ -216,15 +220,17 @@ export default function ApperanceModal({ close }) {
                                     }
                                 </div>
                             </div>
-                            Lights Off
+                            <div className="truncate">
+                                Lights Off
+                            </div>
                         </button>
 
                     </div>
 
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center pt-4">
                         <button
                             onClick={close}
-                            className="">
+                            className="bg-[color:var(--color-primary)] rounded-full p-1">
                             Done
                         </button>
                     </div>

@@ -11,7 +11,7 @@ function Mainlayout() {
     const modal = useModal();
     const appearance = useAppearance();
 
-    console.log(appearance)
+    // console.log(appearance)
     useEffect(() => {
         document.documentElement.style.setProperty('--background-primary', appearance.backgroundColor.primary);
         document.documentElement.style.setProperty('--background-secondary', appearance.backgroundColor.secondary);
