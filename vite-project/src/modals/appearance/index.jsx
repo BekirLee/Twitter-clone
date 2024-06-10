@@ -119,9 +119,7 @@ export default function ApperanceModal({ close }) {
                                     ...color,
                                     base: "#0f1419",
                                     baseSecondary: '#536471'
-                                }
-
-                                )
+                                })
                                 setBackground({
                                     name: 'light',
                                     primary: '#fff',

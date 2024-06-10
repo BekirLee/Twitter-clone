@@ -93,7 +93,6 @@ export default function More() {
                         </>
                     )}
                 </Disclosure>
-
             </Popover.Panel>
         </Popover >
     )
