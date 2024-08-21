@@ -4,18 +4,18 @@ import Tab from "~/components/tab";
 export default function Home() {
     return (
 
-        <>  
-            <StickyHeader title="Home Page" />
-            <Tab>
-                <Tab.Items>
-                    <Tab.Item id="for-you">
-                        Tab1
-                    </Tab.Item>
-                    <Tab.Item id="folowings">
-                        Tab2
-                    </Tab.Item>
-                </Tab.Items>
-
+        <>
+            <Tab activeTab='followings'>
+                <StickyHeader title="Home Page" >
+                    <Tab.Items>
+                        <Tab.Item id="for-you">
+                            Tab1
+                        </Tab.Item>
+                        <Tab.Item id="followings">
+                            Tab2
+                        </Tab.Item>
+                    </Tab.Items>
+                </StickyHeader>
                 <Tab.Content id="for-you">
                     content1
                 </Tab.Content>
@@ -24,7 +24,9 @@ export default function Home() {
                     content2
                 </Tab.Content>
             </Tab>
-            Home Component
+            <div className="">
+                Home Component
+            </div>
         </>
     )
 }

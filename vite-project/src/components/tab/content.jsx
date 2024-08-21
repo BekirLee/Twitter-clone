@@ -1,5 +1,3 @@
 export default function Content({ children }) {
-    return (
-        { children }
-    )
+    return children
 }
