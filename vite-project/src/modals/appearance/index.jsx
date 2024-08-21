@@ -122,8 +122,7 @@ export default function ApperanceModal({ close }) {
                                 })
                                 setBackground({
                                     name: 'light',
-                                    primary: '#fff',
-                                    primaryAlpha: '#ffffffa6',
+                                    primary: '#ffffff',
                                     secondary: '#f7f9f9',
                                     third: '#eff3f4',
                                     modal: '#5b708366'
@@ -161,7 +160,6 @@ export default function ApperanceModal({ close }) {
                                 setBackground({
                                     name: 'losh',
                                     primary: '#15202b',
-                                    primaryAlpha: '#15202ba6',
                                     secondary: '#1e2732',
                                     third: '#273340',
                                     modal: '#5b708366'
@@ -198,8 +196,7 @@ export default function ApperanceModal({ close }) {
                                 })
                                 setBackground({
                                     name: 'darker',
-                                    primary: '#000',
-                                    primaryAlpha: '#000000a6',
+                                    primary: '#000000',
                                     secondary: '#16181c',
                                     third: '#273340',
                                     modal: '#5b708366'
